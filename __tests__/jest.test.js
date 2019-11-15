@@ -1,7 +1,7 @@
 
 //Example testing for template//
 
-import { MyObject, MyObject2 } from './../src/dice-game.js'
+import { MyObject, MyObject2, PlanetAge } from './../src/dice-game.js'
 
 describe('MyObject', () => {
 
@@ -31,6 +31,24 @@ describe('Numbers Multiply', () => {
     test('should return the product of two numbers', () => {
       var myObject= new MyObject2(4,6,9);
       expect(myObject.multiplyNumbers()).toEqual(10);
+
+    });
+
+});
+
+describe('Planet Age', () => {
+
+    test('should take the user input in years, and set age/years left to live on all other planets to 0', () => {
+      var planetAge = new PlanetAge(27);
+      expect(planetAge.earthAge).toEqual(27);
+      expect(planetAge.mercuryAge).toEqual(0);
+      expect(planetAge.mercuryYearsRemaining).toEqual(0);
+      expect(planetAge.venusAge).toEqual(0);
+      expect(planetAge.venusYearsRemaining).toEqual(0);
+      expect(planetAge.marsAge).toEqual(0);
+      expect(planetAge.marsYearsRemaining).toEqual(0);
+      expect(planetAge.jupiterAge).toEqual(0);
+      expect(planetAge.jupiterYearsRemaining).toEqual(0);
 
     });
 
