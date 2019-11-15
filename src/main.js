@@ -4,6 +4,29 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
+$(document).ready(function() {
+    $("#ageInput").submit(function(event){
+      event.preventDefault();
+      
+      let userInput = parseInt($("#userAgeInput").val());
+      console.log(userInput);
+
+
+
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // function test2() {
 //   console.log('this is the front end');
 // } test2();
