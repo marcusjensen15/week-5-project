@@ -3,38 +3,38 @@
 
 import { MyObject, MyObject2, PlanetAge } from './../src/dice-game.js'
 
-describe('MyObject', () => {
-
-    test('should record three numbers from the user', () => {
-      var myObject= new MyObject(4,6,9);
-      expect(myObject.number1).toEqual(4);
-      expect(myObject.number2).toEqual(6);
-      expect(myObject.number3).toEqual(9);
-
-
-    });
-
-});
-
-describe('Numbers Multiply', () => {
-
-    test('should return the product of two numbers', () => {
-      var myObject= new MyObject(4,6,9);
-      expect(myObject.multiplyNumbers()).toEqual(24);
-
-    });
-
-});
-
-describe('Numbers Multiply', () => {
-
-    test('should return the product of two numbers', () => {
-      var myObject= new MyObject2(4,6,9);
-      expect(myObject.multiplyNumbers()).toEqual(10);
-
-    });
-
-});
+// describe('MyObject', () => {
+//
+//     test('should record three numbers from the user', () => {
+//       var myObject= new MyObject(4,6,9);
+//       expect(myObject.number1).toEqual(4);
+//       expect(myObject.number2).toEqual(6);
+//       expect(myObject.number3).toEqual(9);
+//
+//
+//     });
+//
+// });
+//
+// describe('Numbers Multiply', () => {
+//
+//     test('should return the product of two numbers', () => {
+//       var myObject= new MyObject(4,6,9);
+//       expect(myObject.multiplyNumbers()).toEqual(24);
+//
+//     });
+//
+// });
+//
+// describe('Numbers Multiply', () => {
+//
+//     test('should return the product of two numbers', () => {
+//       var myObject= new MyObject2(4,6,9);
+//       expect(myObject.multiplyNumbers()).toEqual(10);
+//
+//     });
+//
+// });
 
 describe('Planet Age', () => {
 
@@ -55,31 +55,41 @@ describe('Planet Age', () => {
 
 });
 
-describe('Mercury Age', () => {
+// describe('Mercury Age', () => {
+//
+//     test('should return the users age on Mercury', () => {
+//       var planetAge= new PlanetAge(27);
+//       expect(planetAge.mercuryAgeCalc()).toEqual(112.5);
+//
+//     });
+//
+// });
+//
+// describe('Mercury Time Left', () => {
+//
+//     test('should return the amount of years the user will live on mercury', () => {
+//       var planetAge= new PlanetAge(27);
+//       expect(planetAge.mercuryYearsLeft()).toEqual(116);
+//
+//     });
+//
+// });
+//
+// describe('Venus Age', () => {
+//
+//     test('should return the users age on venus', () => {
+//       var planetAge= new PlanetAge(27);
+//       expect(planetAge.venusAgeCalc()).toEqual(45);
+//
+//     });
+//
+// });
 
-    test('should return the users age on Mercury', () => {
+describe('Venus Time Left', () => {
+
+    test('should return the amount of years the user will live on venus', () => {
       var planetAge= new PlanetAge(27);
-      expect(planetAge.mercuryAgeCalc()).toEqual(112.5);
-
-    });
-
-});
-
-describe('Mercury Time Left', () => {
-
-    test('should return the amount of years the user will live on mercury', () => {
-      var planetAge= new PlanetAge(27);
-      expect(planetAge.mercuryYearsLeft()).toEqual(116);
-
-    });
-
-});
-
-describe('Venus Age', () => {
-
-    test('should return the users age on venus', () => {
-      var planetAge= new PlanetAge(27);
-      expect(planetAge.venusAgeCalc()).toEqual(45);
+      expect(planetAge.venusYearsLeft()).toEqual(116);
 
     });
 
