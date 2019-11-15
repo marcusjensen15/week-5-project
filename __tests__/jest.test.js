@@ -85,11 +85,21 @@ describe('Planet Age', () => {
 //
 // });
 
-describe('Venus Time Left', () => {
+// describe('Venus Time Left', () => {
+//
+//     test('should return the amount of years the user will live on venus', () => {
+//       var planetAge= new PlanetAge(27);
+//       expect(planetAge.venusYearsLeft()).toEqual(116);
+//
+//     });
+//
+// });
 
-    test('should return the amount of years the user will live on venus', () => {
+describe('Mars Age', () => {
+
+    test('should return the users age on mars', () => {
       var planetAge= new PlanetAge(27);
-      expect(planetAge.venusYearsLeft()).toEqual(116);
+      expect(planetAge.marsAgeCalc()).toEqual(18);
 
     });
 

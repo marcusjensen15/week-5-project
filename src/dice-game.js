@@ -65,10 +65,16 @@ export class PlanetAge{
     // }
 
     venusYearsLeft(){
-      let venusAge = this.earthAge / 0.50;
-      let venusAverageLife = this.earthAverageLife / .50;
+      let venusAge = this.earthAge / 0.62;
+      let venusAverageLife = this.earthAverageLife / .62;
       let venusTimeLeft = venusAverageLife - venusAge;
       return venusTimeLeft;
+
+    }
+
+    marsAgeCalc(){
+      let marsAge = this.earthAge / 1.5;
+      return marsAge;
 
     }
 
