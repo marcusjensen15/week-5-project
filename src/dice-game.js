@@ -32,15 +32,15 @@ MyObject2.prototype.multiplyNumbers = function() {
 
 export class PlanetAge{
   constructor(earthAge){
-    this.earthAge = earthAge,
-    this.mercuryAge = 0,
-    this.mercuryYearsRemaining = 0,
-    this.venusAge = 0,
-    this.venusYearsRemaining = 0,
-    this.marsAge = 0,
-    this.marsYearsRemaining = 0,
-    this.jupiterAge = 0,
-    this.jupiterYearsRemaining = 0,
+    this.earthAge = earthAge;
+    this.mercuryAge = this.mercuryAgeCalc();
+    this.mercuryYearsRemaining = this.mercuryYearsLeft();
+    // this.venusAge = 0,
+    // this.venusYearsRemaining = 0,
+    // this.marsAge = 0,
+    // this.marsYearsRemaining = 0,
+    // this.jupiterAge = 0,
+    // this.jupiterYearsRemaining = 0,
     this.earthAverageLife = 85
 
   }
@@ -58,49 +58,49 @@ export class PlanetAge{
 
     }
 
-    venusAgeCalc(){
-      let venusAge = Math.floor(this.earthAge / 0.62);
-      return venusAge;
-
-    }
-
-    venusYearsLeft(){
-      let venusAge = Math.round(this.earthAge / 0.62);
-      let venusAverageLife = Math.round(this.earthAverageLife / .62);
-      let venusTimeLeft = venusAverageLife - venusAge;
-      return venusTimeLeft;
-
-    }
-
-    marsAgeCalc(){
-      let marsAge = Math.floor(this.earthAge / 1.88);
-      return marsAge;
-
-    }
-
-    marsYearsLeft(){
-      let marsAge = Math.floor(this.earthAge / 1.88);
-      let marsAverageLife = Math.floor(this.earthAverageLife / 1.88);
-      let marsTimeLeft = marsAverageLife - marsAge;
-      return marsTimeLeft;
-
-    }
-
-    jupiterAgeCalc(){
-      let jupiterAge = Math.floor(this.earthAge / 11.86);
-      return jupiterAge;
-
-    }
-
-
-
-    jupiterYearsLeft(){
-      let jupiterAge = Math.floor(this.earthAge / 11.86);
-      let jupiterAverageLife = Math.floor(this.earthAverageLife / 11.86);
-      let jupiterTimeLeft = jupiterAverageLife - jupiterAge;
-      return jupiterTimeLeft;
-
-    }
+    // venusAgeCalc(){
+    //   let venusAge = Math.floor(this.earthAge / 0.62);
+    //   return venusAge;
+    //
+    // }
+    //
+    // venusYearsLeft(){
+    //   let venusAge = Math.round(this.earthAge / 0.62);
+    //   let venusAverageLife = Math.round(this.earthAverageLife / .62);
+    //   let venusTimeLeft = venusAverageLife - venusAge;
+    //   return venusTimeLeft;
+    //
+    // }
+    //
+    // marsAgeCalc(){
+    //   let marsAge = Math.floor(this.earthAge / 1.88);
+    //   return marsAge;
+    //
+    // }
+    //
+    // marsYearsLeft(){
+    //   let marsAge = Math.floor(this.earthAge / 1.88);
+    //   let marsAverageLife = Math.floor(this.earthAverageLife / 1.88);
+    //   let marsTimeLeft = marsAverageLife - marsAge;
+    //   return marsTimeLeft;
+    //
+    // }
+    //
+    // jupiterAgeCalc(){
+    //   let jupiterAge = Math.floor(this.earthAge / 11.86);
+    //   return jupiterAge;
+    //
+    // }
+    //
+    //
+    //
+    // jupiterYearsLeft(){
+    //   let jupiterAge = Math.floor(this.earthAge / 11.86);
+    //   let jupiterAverageLife = Math.floor(this.earthAverageLife / 11.86);
+    //   let jupiterTimeLeft = jupiterAverageLife - jupiterAge;
+    //   return jupiterTimeLeft;
+    //
+    // }
 
 };
 
