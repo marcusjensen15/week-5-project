@@ -39,7 +39,7 @@ import { MyObject, MyObject2, PlanetAge } from './../src/dice-game.js'
 describe('Planet Age', () => {
 
     test('should take the user input in years, and set age/years left to live on all other planets to 0', () => {
-      var planetAge = new PlanetAge(27);
+      let planetAge = new PlanetAge(27);
       expect(planetAge.earthAge).toEqual(27);
       expect(planetAge.mercuryAge).toEqual(113);
       expect(planetAge.mercuryYearsRemaining).toEqual(241);
@@ -49,7 +49,7 @@ describe('Planet Age', () => {
       expect(planetAge.marsYearsRemaining).toEqual(31);
       expect(planetAge.jupiterAge).toEqual(2);
       expect(planetAge.jupiterYearsRemaining).toEqual(5);
-      
+
 
     });
 
@@ -58,7 +58,7 @@ describe('Planet Age', () => {
 describe('Mercury Age', () => {
 
     test('should return the users age on Mercury', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.mercuryAgeCalc()).toEqual(113);
 
     });
@@ -68,7 +68,7 @@ describe('Mercury Age', () => {
 describe('Mercury Time Left', () => {
 
     test('should return the amount of years the user will live on mercury', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.mercuryYearsLeft()).toEqual(241);
 
     });
@@ -78,7 +78,7 @@ describe('Mercury Time Left', () => {
 describe('Venus Age', () => {
 
     test('should return the users age on venus', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.venusAgeCalc()).toEqual(43);
 
     });
@@ -88,7 +88,7 @@ describe('Venus Age', () => {
 describe('Venus Time Left', () => {
 
     test('should return the amount of years the user will live on venus', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.venusYearsLeft()).toEqual(93);
 
     });
@@ -98,7 +98,7 @@ describe('Venus Time Left', () => {
 describe('Mars Age', () => {
 
     test('should return the users age on mars', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.marsAgeCalc()).toEqual(14);
 
     });
@@ -108,7 +108,7 @@ describe('Mars Age', () => {
 describe('Mars Time Left', () => {
 
     test('should return the amount of years the user will live on Mars', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.marsYearsLeft()).toEqual(31);
 
     });
@@ -118,7 +118,7 @@ describe('Mars Time Left', () => {
 describe('Jupiter Age', () => {
 
     test('should return the users age on jupiter', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.jupiterAgeCalc()).toEqual(2);
 
     });
@@ -129,7 +129,7 @@ describe('Jupiter Age', () => {
 describe('Jupiter Time Left', () => {
 
     test('should return the amount of years the user will live on jupiter', () => {
-      var planetAge= new PlanetAge(27);
+      let planetAge= new PlanetAge(27);
       expect(planetAge.jupiterYearsLeft()).toEqual(5);
 
     });
@@ -137,3 +137,4 @@ describe('Jupiter Time Left', () => {
 });
 
 //Example testing for template//
+// replacing all var s with let
