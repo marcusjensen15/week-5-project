@@ -44,25 +44,25 @@ export class PlanetAge{
     this.earthAverageLife = 85
 
   }
-    // mercuryAgeCalc(){
-    //   let mercAge = this.earthAge / 0.24;
-    //   return mercAge;
-    //
-    // }
-    //
-    // mercuryYearsLeft(){
-    //   let mercAge = this.earthAge / 0.24;
-    //   let mercAverageLife = this.earthAverageLife / .24;
-    //   let mercTimeLeft = mercAverageLife - mercAge;
-    //   return mercTimeLeft;
-    //
-    // }
-    //
-    // venusAgeCalc(){
-    //   let venusAge = this.earthAge / 0.62;
-    //   return venusAge;
-    //
-    // }
+    mercuryAgeCalc(){
+      let mercAge = Math.round(this.earthAge / 0.24);
+      return mercAge;
+
+    }
+
+    mercuryYearsLeft(){
+      let mercAge = Math.round(this.earthAge / 0.24);
+      let mercAverageLife = Math.round(this.earthAverageLife / .24);
+      let mercTimeLeft = mercAverageLife - mercAge;
+      return mercTimeLeft;
+
+    }
+
+    venusAgeCalc(){
+      let venusAge = Math.floor(this.earthAge / 0.62);
+      return venusAge;
+
+    }
 
     venusYearsLeft(){
       let venusAge = Math.round(this.earthAge / 0.62);

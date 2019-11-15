@@ -55,35 +55,35 @@ describe('Planet Age', () => {
 
 });
 
-// describe('Mercury Age', () => {
-//
-//     test('should return the users age on Mercury', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.mercuryAgeCalc()).toEqual(112.5);
-//
-//     });
-//
-// });
-//
-// describe('Mercury Time Left', () => {
-//
-//     test('should return the amount of years the user will live on mercury', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.mercuryYearsLeft()).toEqual(116);
-//
-//     });
-//
-// });
-//
-// describe('Venus Age', () => {
-//
-//     test('should return the users age on venus', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.venusAgeCalc()).toEqual(45);
-//
-//     });
-//
-// });
+describe('Mercury Age', () => {
+
+    test('should return the users age on Mercury', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.mercuryAgeCalc()).toEqual(113);
+
+    });
+
+});
+
+describe('Mercury Time Left', () => {
+
+    test('should return the amount of years the user will live on mercury', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.mercuryYearsLeft()).toEqual(241);
+
+    });
+
+});
+
+describe('Venus Age', () => {
+
+    test('should return the users age on venus', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.venusAgeCalc()).toEqual(43);
+
+    });
+
+});
 
 describe('Venus Time Left', () => {
 
