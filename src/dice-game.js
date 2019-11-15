@@ -33,6 +33,7 @@ MyObject2.prototype.multiplyNumbers = function() {
 export class PlanetAge{
   constructor(earthAge){
     this.earthAge = earthAge;
+    this.earthAverageLife = 85;
     this.mercuryAge = this.mercuryAgeCalc();
     this.mercuryYearsRemaining = this.mercuryYearsLeft();
     // this.venusAge = 0,
@@ -41,7 +42,7 @@ export class PlanetAge{
     // this.marsYearsRemaining = 0,
     // this.jupiterAge = 0,
     // this.jupiterYearsRemaining = 0,
-    this.earthAverageLife = 85
+    // this.earthAverageLife = 85
 
   }
     mercuryAgeCalc(){
