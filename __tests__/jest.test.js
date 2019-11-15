@@ -75,5 +75,14 @@ describe('Mercury Time Left', () => {
 
 });
 
+describe('Venus Age', () => {
+
+    test('should return the users age on venus', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.venusAgeCalc()).toEqual(45);
+
+    });
+
+});
 
 //Example testing for template//
