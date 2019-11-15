@@ -40,9 +40,9 @@ export class PlanetAge{
     this.venusYearsRemaining = this.venusYearsLeft();
     this.marsAge = this.marsAgeCalc();
     this.marsYearsRemaining = this.marsYearsLeft();
-    // this.jupiterAge = 0,
-    // this.jupiterYearsRemaining = 0,
-    // this.earthAverageLife = 85
+    this.jupiterAge = this.jupiterAgeCalc();
+    this.jupiterYearsRemaining = this.jupiterYearsLeft();
+
 
   }
     mercuryAgeCalc(){
@@ -87,21 +87,21 @@ export class PlanetAge{
 
     }
 
-    // jupiterAgeCalc(){
-    //   let jupiterAge = Math.floor(this.earthAge / 11.86);
-    //   return jupiterAge;
-    //
-    // }
-    //
-    //
-    //
-    // jupiterYearsLeft(){
-    //   let jupiterAge = Math.floor(this.earthAge / 11.86);
-    //   let jupiterAverageLife = Math.floor(this.earthAverageLife / 11.86);
-    //   let jupiterTimeLeft = jupiterAverageLife - jupiterAge;
-    //   return jupiterTimeLeft;
-    //
-    // }
+    jupiterAgeCalc(){
+      let jupiterAge = Math.floor(this.earthAge / 11.86);
+      return jupiterAge;
+
+    }
+
+
+
+    jupiterYearsLeft(){
+      let jupiterAge = Math.floor(this.earthAge / 11.86);
+      let jupiterAverageLife = Math.floor(this.earthAverageLife / 11.86);
+      let jupiterTimeLeft = jupiterAverageLife - jupiterAge;
+      return jupiterTimeLeft;
+
+    }
 
 };
 

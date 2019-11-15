@@ -47,9 +47,9 @@ describe('Planet Age', () => {
       expect(planetAge.venusYearsRemaining).toEqual(93);
       expect(planetAge.marsAge).toEqual(14);
       expect(planetAge.marsYearsRemaining).toEqual(31);
-      // expect(planetAge.jupiterAge).toEqual(0);
-      // expect(planetAge.jupiterYearsRemaining).toEqual(0);
-      // expect(planetAge.earthAverageLife).toEqual(85);
+      expect(planetAge.jupiterAge).toEqual(2);
+      expect(planetAge.jupiterYearsRemaining).toEqual(5);
+      
 
     });
 
@@ -115,25 +115,25 @@ describe('Mars Time Left', () => {
 
 });
 
-// describe('Jupiter Age', () => {
-//
-//     test('should return the users age on jupiter', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.jupiterAgeCalc()).toEqual(2);
-//
-//     });
-//
-// });
-//
-//
-// describe('Jupiter Time Left', () => {
-//
-//     test('should return the amount of years the user will live on jupiter', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.jupiterYearsLeft()).toEqual(5);
-//
-//     });
-//
-// });
+describe('Jupiter Age', () => {
+
+    test('should return the users age on jupiter', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.jupiterAgeCalc()).toEqual(2);
+
+    });
+
+});
+
+
+describe('Jupiter Time Left', () => {
+
+    test('should return the amount of years the user will live on jupiter', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.jupiterYearsLeft()).toEqual(5);
+
+    });
+
+});
 
 //Example testing for template//
