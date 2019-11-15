@@ -65,5 +65,15 @@ describe('Mercury Age', () => {
 
 });
 
+describe('Mercury Time Left', () => {
+
+    test('should return the amount of years the user will live on mercury', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.mercuryYearsLeft()).toEqual(116);
+
+    });
+
+});
+
 
 //Example testing for template//

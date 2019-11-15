@@ -51,10 +51,10 @@ export class PlanetAge{
     }
 
     mercuryYearsLeft(){
-      let mercAge = this.earthAge / 0.24;
-      let mercAverageLife = this.earthAverageLife / .24;
-      let marsTimeLeft = mercAverageLife - mercAge;
-      
+      let mercAge = this.earthAge / 0.5;
+      let mercAverageLife = this.earthAverageLife / .5;
+      let mercTimeLeft = mercAverageLife - mercAge;
+      return mercTimeLeft;
 
     }
 };
