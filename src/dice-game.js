@@ -78,11 +78,27 @@ export class PlanetAge{
     //
     // }
 
-    marsYearsLeft(){
-      let marsAge = this.earthAge / 2;
-      let marsAverageLife = this.earthAverageLife / 2;
-      let marsTimeLeft = marsAverageLife - marsAge;
-      return marsTimeLeft;
+    // marsYearsLeft(){
+    //   let marsAge = this.earthAge / 1.88;
+    //   let marsAverageLife = this.earthAverageLife / 1.88;
+    //   let marsTimeLeft = marsAverageLife - marsAge;
+    //   return marsTimeLeft;
+    //
+    // }
+
+    jupiterAgeCalc(){
+      let jupiterAge = Math.floor(this.earthAge / 11.86);
+      return jupiterAge;
+
+    }
+
+
+
+    jupiterYearsLeft(){
+      let jupiterAge = Math.floor(this.earthAge / 11.86);
+      let jupiterAverageLife = Math.floor(this.earthAverageLife / 11.86);
+      let jupiterTimeLeft = jupiterAverageLife - jupiterAge;
+      return jupiterTimeLeft;
 
     }
 
