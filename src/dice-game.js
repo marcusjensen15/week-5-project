@@ -40,10 +40,23 @@ export class PlanetAge{
     this.marsAge = 0,
     this.marsYearsRemaining = 0,
     this.jupiterAge = 0,
-    this.jupiterYearsRemaining = 0
+    this.jupiterYearsRemaining = 0,
+    this.earthAverageLife = 85
 
   }
+    mercuryAgeCalc(){
+      let mercAge = this.earthAge / 0.24;
+      return mercAge;
 
+    }
+
+    mercuryYearsLeft(){
+      let mercAge = this.earthAge / 0.24;
+      let mercAverageLife = this.earthAverageLife / .24;
+      let marsTimeLeft = mercAverageLife - mercAge;
+      
+
+    }
 };
 
 

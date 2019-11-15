@@ -49,6 +49,17 @@ describe('Planet Age', () => {
       expect(planetAge.marsYearsRemaining).toEqual(0);
       expect(planetAge.jupiterAge).toEqual(0);
       expect(planetAge.jupiterYearsRemaining).toEqual(0);
+      expect(planetAge.earthAverageLife).toEqual(85);
+
+    });
+
+});
+
+describe('Mercury Age', () => {
+
+    test('should return the users age on Mercury', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.mercuryAgeCalc()).toEqual(112.5);
 
     });
 
