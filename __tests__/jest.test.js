@@ -95,15 +95,15 @@ describe('Planet Age', () => {
 //
 // });
 
-// describe('Mars Age', () => {
-//
-//     test('should return the users age on mars', () => {
-//       var planetAge= new PlanetAge(27);
-//       expect(planetAge.marsAgeCalc()).toEqual();
-//
-//     });
-//
-// });
+describe('Mars Age', () => {
+
+    test('should return the users age on mars', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.marsAgeCalc()).toEqual(14);
+
+    });
+
+});
 
 describe('Mars Time Left', () => {
 

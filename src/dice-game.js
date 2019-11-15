@@ -71,12 +71,12 @@ export class PlanetAge{
     //   return venusTimeLeft;
     //
     // }
-    //
-    // marsAgeCalc(){
-    //   let marsAge = this.earthAge / 1.88;
-    //   return marsAge;
-    //
-    // }
+
+    marsAgeCalc(){
+      let marsAge = Math.floor(this.earthAge / 1.88);
+      return marsAge;
+
+    }
 
     marsYearsLeft(){
       let marsAge = Math.floor(this.earthAge / 1.88);
