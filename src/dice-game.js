@@ -64,17 +64,25 @@ export class PlanetAge{
     //
     // }
 
-    venusYearsLeft(){
-      let venusAge = this.earthAge / 0.62;
-      let venusAverageLife = this.earthAverageLife / .62;
-      let venusTimeLeft = venusAverageLife - venusAge;
-      return venusTimeLeft;
+    // venusYearsLeft(){
+    //   let venusAge = this.earthAge / 0.62;
+    //   let venusAverageLife = this.earthAverageLife / .62;
+    //   let venusTimeLeft = venusAverageLife - venusAge;
+    //   return venusTimeLeft;
+    //
+    // }
+    //
+    // marsAgeCalc(){
+    //   let marsAge = this.earthAge / 1.88;
+    //   return marsAge;
+    //
+    // }
 
-    }
-
-    marsAgeCalc(){
-      let marsAge = this.earthAge / 1.5;
-      return marsAge;
+    marsYearsLeft(){
+      let marsAge = this.earthAge / 2;
+      let marsAverageLife = this.earthAverageLife / 2;
+      let marsTimeLeft = marsAverageLife - marsAge;
+      return marsTimeLeft;
 
     }
 
