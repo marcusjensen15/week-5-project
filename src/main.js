@@ -7,9 +7,10 @@ import './styles.css';
 $(document).ready(function() {
     $("#ageInput").submit(function(event){
       event.preventDefault();
-      
       let userInput = parseInt($("#userAgeInput").val());
-      console.log(userInput);
+      let planetAge = new PlanetAge(userInput);
+      console.log(planetAge);
+
 
 
 
