@@ -75,7 +75,7 @@ export class PlanetAge{
 };
 
 
-//Example code for running tests in jest.test.js//
+
 
 // Backend logic:
 //
