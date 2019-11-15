@@ -7,7 +7,7 @@ import './styles.css';
 $(document).ready(function() {
   function lifeOutput(life){
     if(life < 0){
-      return "Woah! you are beating the average life expectancy by: " + Math.abs(life);
+      return "Woah! you are beating the average life expectancy by: " + Math.abs(life) +" years";
 
     }else {return "You have " + life + " years left to live.";}
 
@@ -16,8 +16,10 @@ $(document).ready(function() {
 
     $("#ageInput").submit(function(event){
       event.preventDefault();
-      let userInput = parseInt($("#userAgeInput").val());
+      const userInput = parseInt($("#userAgeInput").val());
       let planetAge = new PlanetAge(userInput);
+
+      $("#ageHeader").text("Below is your age for each planet: ");
 
 
       $("#output").text("Your age on Mercury is: " + planetAge.mercuryAge);

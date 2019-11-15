@@ -1,0 +1,32 @@
+#mainHeader{
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 30px;
+}
+
+#buttonDiv{
+  text-align: center;
+  padding-bottom: 30px;
+
+}
+
+.container{
+  background-color: tan;
+  border-radius: 20px;
+
+}
+
+#output8{
+
+  padding-bottom: 30px;
+}
+
+#innerStyle{
+  text-align: center;
+
+}
+
+#output4{
+  margin-bottom: 20px;
+
+}
