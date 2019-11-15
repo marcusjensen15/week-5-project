@@ -105,6 +105,16 @@ describe('Planet Age', () => {
 //
 // });
 
+describe('Mars Time Left', () => {
+
+    test('should return the amount of years the user will live on Mars', () => {
+      var planetAge= new PlanetAge(27);
+      expect(planetAge.marsYearsLeft()).toEqual(31);
+
+    });
+
+});
+
 describe('Jupiter Age', () => {
 
     test('should return the users age on jupiter', () => {

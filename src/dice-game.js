@@ -78,13 +78,13 @@ export class PlanetAge{
     //
     // }
 
-    // marsYearsLeft(){
-    //   let marsAge = this.earthAge / 1.88;
-    //   let marsAverageLife = this.earthAverageLife / 1.88;
-    //   let marsTimeLeft = marsAverageLife - marsAge;
-    //   return marsTimeLeft;
-    //
-    // }
+    marsYearsLeft(){
+      let marsAge = Math.floor(this.earthAge / 1.88);
+      let marsAverageLife = Math.floor(this.earthAverageLife / 1.88);
+      let marsTimeLeft = marsAverageLife - marsAge;
+      return marsTimeLeft;
+
+    }
 
     jupiterAgeCalc(){
       let jupiterAge = Math.floor(this.earthAge / 11.86);
