@@ -10,6 +10,13 @@ $(document).ready(function() {
       let userInput = parseInt($("#userAgeInput").val());
       let planetAge = new PlanetAge(userInput);
       console.log(planetAge);
+      $("#output").text("Your age on Mercury is: " + planetAge.mercuryAge);
+      $("#output2").text("Your age on Venus is: " + planetAge.venusAge);
+      $("#output3").text("Your age on Mars is: " + planetAge.marsAge);
+      $("#output4").text("Your age on Jupiter is: " + planetAge.jupiterAge);
+
+
+
 
 
 
