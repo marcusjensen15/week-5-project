@@ -31,3 +31,15 @@ MyObject2.prototype.multiplyNumbers = function() {
 }
 
 //Example code for running tests in jest.test.js//
+
+Backend logic:
+
+Write 5 methods:
+
+-Calculate Mercury age (.24 earth years)
+-Calculate Venus age (.62 earth years)
+-Calculate Mars age (1.88 earth years)
+-Calculate Jupiter age (11.86 eartj uears)
+-Calculate years left to live on each planet (assume average human lives to 85 on earth). If they are above average life expectancy, return how many years they have live passed life expectancy.
+
+make sure to use let and const, define objects using classes
