@@ -1,14 +1,35 @@
+# _Solar Age Calculator_
+
+#### _This application will calculate your age on a handful of different planets, November 15th, 2019_
+
+#### By _**Marcus Jensen**_
+
+## Description
+
+_The user inputs their age. The application will calculate that persons age in: Mars, Venus, Mercury and Jupiter "years". The application will also let the user know how long they will live in each planets years (assuming an average lifespan of 85 earth years)._
+
+## Setup/Installation Requirements
+
+* _Download repository from github_
+* _Make sure node.js and npm are installed (run npm install in terminal)_
+* _Open file in text editor to make changes_
+* _open file in browser (Chrome Recommended) to see live updated product._
 
 
-## Setup/Installation Instructions
+## Known Bugs
 
-* _Download Repo_
-* _run: npm install in the terminal_
-* _run: npm run build. this will create distribution folder. It also creates the index.html file within the distribution folder. When making edits to the code, edit the index.html, and all other files within the SRC folder_
-* _run: npm run start to begin the live developer session_
-* _if making edits to the lint or any other configuration, you will need to run another build AND another start for them to apply_
-* _when npm run start is running, it will live update. If you input other commands in the terminal it will not do anything. Control C will stop the run so you can access the terminal again_
+_No known bugs_
 
-* _This version includes Jest and Babel pre-loaded_
+## Support and contact details
 
-* _To run a unit test, run: 'npm test'._
+_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+
+## Technologies Used
+
+_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+
+### License
+
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+
+Copyright (c) 2016 **_{List of contributors or company name}_**
