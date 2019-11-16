@@ -11,4 +11,4 @@
 
 * _This version includes Jest and Babel pre-loaded_
 
-* _To run a unit test, run: 'npm test' in command ._
+* _To run a unit test, run: 'npm test'._
